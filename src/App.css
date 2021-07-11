@@ -1,38 +1,98 @@
 .App {
-  text-align: center;
+  background-color: #eee;
+}
+.MainTable {
+  overflow-x: auto;
+}
+table {
+  background-color: white;
+  width: 100%;
+}
+header {
+  background-color: white;
+}
+.Menu {
+  display: inline-block;
+  width: 50%;
+}
+.Menu a {
+  text-decoration: none;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Menu a:hover {
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Menu li {
+  display: inline-block;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.Users {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+.Users p {
+  padding-right: 10px;
+}
+
+.WeekProgress,
+.WeekPicture,
+.FoodPictures {
+  display: inline-block;
+  width: 33%;
+}
+.FoodPictures li {
+  display: inline-block;
+  padding-right: 10px;
+}
+.arrows {
+  display: inline-block;
+  width: 70px;
+}
+.Hours {
+  background-color: #eee;
+}
+table p {
+  color: #b2c200;
+}
+.Day65 {
+  color: #ff801a;
+}
+
+.footer {
+  display: inline-block;
+  width: 33%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .Menu {
+    width: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .FoodPictures {
+    width: 100%;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .WeekProgress {
+    width: 100%;
+    text-align: center;
+  }
+  .WeekWrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer {
+    width: 95%;
+    margin: 0 40px 0 20px;
+  }
+  .Users {
+    width: 100%;
+  }
+  .WeekPicture {
+    width: 100%;
   }
 }
